@@ -7,5 +7,16 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Downloads/commons-io-2.5-src/src/main/java" />
+          <root url="file://$USER_HOME$/Downloads/commons-io-2.5-src/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="java-io-utils" level="project" />
   </component>
 </module>
