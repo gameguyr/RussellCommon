@@ -1,4 +1,4 @@
-/**
+package main; /**
  * Created by russell.lego on 7/25/16.
  */
 import java.io.*;

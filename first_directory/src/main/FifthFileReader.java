@@ -1,4 +1,4 @@
-/**
+package main; /**
  * Created by lego on 6/22/17.
  */
 import java.io.*;
@@ -69,5 +69,7 @@ public class FifthFileReader{
             System.out.println(matchedStringArray[i]);
         }
     }
+
+
 
 }
