@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class SecondFileReader {
     public static void main(String[] args) throws IOException {
-        File myFile = new File("/Users/russell.lego/IdeaProjects/FirstProject/dataDirectory/aFewLinesForReading.txt");
+        File myFile = new File("/Users/lego/git/RussellCommon/first_directory/dataDirectory/aFewLinesForReading.txt");
         FileReader myFileReader = new FileReader(myFile);
 
         String myContent = new Scanner(myFile).useDelimiter("\\w").next();

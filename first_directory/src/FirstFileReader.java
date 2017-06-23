@@ -5,7 +5,7 @@ import java.io.*;
 
 public class FirstFileReader {
     public static void main(String[] args) throws IOException {
-        File myFile = new File("/Users/russell.lego/IdeaProjects/FirstProject/dataDirectory/aFewLinesForReading.txt");
+        File myFile = new File("/Users/lego/git/RussellCommon/first_directory/dataDirectory/aFewLinesForReading.txt");
         FileReader myFileReader = new FileReader(myFile);
         BufferedReader myBufferedReader = new BufferedReader(myFileReader);
 

@@ -5,9 +5,9 @@
 import java.io.*;
 public class FourthFileReader{
 
-    public static void main(String args[]) throws IOException {
-
-        InputStream myInputStream = new FileInputStream("/Users/russell.lego/IdeaProjects/FirstProject/dataDirectory/aFewLinesForReading.txt");
+   public static void main(String args[]) throws IOException {
+        String filePath = "/Users/lego/git/RussellCommon/first_directory/dataDirectory/aFewLinesForReading.txt";
+        InputStream myInputStream = new FileInputStream(filePath);
         BufferedReader myBufferedReader = new BufferedReader(new InputStreamReader(myInputStream));
         String line = myBufferedReader.readLine(); // reads in the first line
         StringBuilder myStringBuilder = new StringBuilder();
