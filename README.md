@@ -1,2 +1,2 @@
-# farouk_and_russell
-This is a repo where Farouk and I can learn Java together
+# JavaRusell
+This is a repo where I can learn Java Programming
