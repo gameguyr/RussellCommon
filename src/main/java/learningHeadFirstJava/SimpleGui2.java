@@ -19,10 +19,15 @@ public class SimpleGui2 {
 
     public void go() {
         JFrame frame = new JFrame();
-        MyDrawOrangeBlock myDrawOrangeBlock = new MyDrawOrangeBlock();
+        // here's where I can choose was panel to add to my pane
+
+//        DrawOrangeBlockPanel drawOrangeBlockPanel = new DrawOrangeBlockPanel();
+//        frame.getContentPane().add(drawOrangeBlockPanel);
+
+        DrawImagePanel drawImagePanel = new DrawImagePanel();
+        frame.getContentPane().add(drawImagePanel);
 
 
-        frame.getContentPane().add(myDrawOrangeBlock);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(1600, 900);
         frame.setVisible(true);

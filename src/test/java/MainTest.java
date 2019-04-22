@@ -1,4 +1,5 @@
-import main.SixthFileReader;
+//import main.SixthFileReader;
+import LearningFileReaders.SixthFileReader;
 import org.junit.Assert;
 import org.junit.Test;
 

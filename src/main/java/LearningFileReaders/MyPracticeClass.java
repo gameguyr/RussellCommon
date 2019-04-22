@@ -17,46 +17,8 @@ import static java.lang.Math.random;
 public class MyPracticeClass {
 
     public static void main(String[] args) {
-
-//        System.out.print(floor(3.2));
-//        System.out.print(integerFunction());
-        List<Double> xCoordsOfTriangle = Arrays.asList(0.0, 6.0, 3.0);
-        List<Double> yCoordsOfTriangle = Arrays.asList(0.0, 0.0, 3 * Math.sqrt(3));
-//        System.out.print(list.get(1));
-        ArrayList xCoords = new ArrayList();
-        xCoords.add(4.0);
-        ArrayList yCoords = new ArrayList();
-        yCoords.add(1.0);
-
-//        System.out.print(yCoords.get(0));
-
-        int bigN = 100;
-
-        for (int i = 0 ; i < bigN + 1 ; i++) {
-            xCoords.add(sierpinski((double) xCoords.get(i), xCoordsOfTriangle));
-            yCoords.add(sierpinski((double) yCoords.get(i), yCoordsOfTriangle));
-        }
-
-
-
-
-
-            try{
-                PrintWriter writer = new PrintWriter("../sierpinski_v2.dat", "UTF-8");
-                for (int i = 0 ; i < bigN + 1 ; i++) {
-                    System.out.printf("%.2f,%.2f%n", xCoords.get(i), yCoords.get(i));
-                    writer.printf("%.2f,%.2f%n", xCoords.get(i), yCoords.get(i));
-                }
-                writer.close();
-            } catch (IOException e) {
-                // do something
-            }
-
-        }
-
-
-
     }
+
 
     /**
      *
