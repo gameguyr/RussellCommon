@@ -24,8 +24,11 @@ public class SimpleGui2 {
 //        DrawOrangeBlockPanel drawOrangeBlockPanel = new DrawOrangeBlockPanel();
 //        frame.getContentPane().add(drawOrangeBlockPanel);
 
-        DrawImagePanel drawImagePanel = new DrawImagePanel();
-        frame.getContentPane().add(drawImagePanel);
+//        DrawImagePanel drawImagePanel = new DrawImagePanel();
+//        frame.getContentPane().add(drawImagePanel);
+
+        DrawRandomCirclePanel drawRandomCirclePanel = new DrawRandomCirclePanel();
+        frame.getContentPane().add(drawRandomCirclePanel);
 
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
