@@ -10,14 +10,48 @@ package learningHeadFirstJava.learningGUI;
 // it doesn't animate
 ////////////////////////
 
+
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
 
 public class SimpleGuiAnimation {
-    int x_position = 70;
-    int y_position = 70;
+    int x1_circle_coord = 70;
+    int x2_circle_coord = 350;
+
+    int y1_circle_coord = 70;
+    int y2_circle_coord = 350;
+
+    int frameWidth;
+    int frameHeight;
 
     DrawRandomGradientCirclePanel panel;
+
+    public SimpleGuiAnimation() {
+        Properties properties = new Properties();
+
+        try {
+            File file = new File("src/main/resources/dataDirectory/gui_constants.properties");
+            FileInputStream fileInputStream = new FileInputStream(file);
+            properties.load(fileInputStream);
+        }
+        catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("Could not find the properties file" + fileNotFoundException);
+        }
+        catch (Exception exception) {
+            System.out.println("Could not load properties file" + exception.toString());
+        }
+
+
+        this.frameWidth = Integer.parseInt(properties.getProperty("frameWidth"));
+        this.frameHeight = Integer.parseInt(properties.getProperty("frameHeight"));
+    }
+
+
+
 
     public static void main(String[] args) {
         SimpleGuiAnimation myGui = new SimpleGuiAnimation();
@@ -37,7 +71,8 @@ public class SimpleGuiAnimation {
         frame.getContentPane().add(BorderLayout.CENTER, panel);
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(900, 400);
+//        frame.setSize(properties.getProperty("frameWidth"), properties.getProperty("frameHeight"));
+        frame.setSize(this.frameWidth, this.frameHeight);
         frame.setVisible(true);
 
 
@@ -54,8 +89,12 @@ public class SimpleGuiAnimation {
 
     public void paintCircle() {
         for (int i=0; i<130; i++) {
-            x_position = x_position + 1;
-            y_position = y_position + 1;
+            x1_circle_coord = x1_circle_coord + 1;
+            x2_circle_coord = x2_circle_coord + 1;
+
+            y1_circle_coord = y1_circle_coord + 1;
+            y2_circle_coord = y2_circle_coord + 1;
+
             panel.repaint();
 
             try {
@@ -66,20 +105,21 @@ public class SimpleGuiAnimation {
     }
 
 
-    public class DrawRandomColoredCirclePanel extends JPanel {
+    public class DrawRandomGradientCirclePanel extends JPanel {
+        RussColor russColor = new RussColor();
+
 
         public void paintComponent(Graphics graphics) {
-            graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
+            // casting the graphics object to a graphics2d object so I can use more of the sub-class's methods
+            Graphics2D graphics2D = (Graphics2D) graphics;
 
-            int redValue = (int) (Math.random() * 256);
-            int greenValue = (int) (Math.random() * 256);
-            int blueValue = (int) (Math.random() * 256);
+            Color randomColorOne = russColor.getRandomColor();
+            Color randomColorTwo = russColor.getRandomColor();
 
-            Color randomColor = new Color(redValue, greenValue, blueValue);
-            graphics.setColor(randomColor);
-            graphics.fillOval(x_position, y_position, 100, 100);
+            GradientPaint gradientPaint = new GradientPaint(x1_circle_coord, y1_circle_coord, randomColorOne, x2_circle_coord, y2_circle_coord, randomColorTwo);
 
-
+            graphics2D.setPaint(gradientPaint);
+            graphics2D.fillOval(x1_circle_coord, y1_circle_coord, x2_circle_coord, y2_circle_coord);
         }
     }
 
