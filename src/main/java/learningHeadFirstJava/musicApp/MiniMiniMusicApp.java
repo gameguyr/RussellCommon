@@ -1,4 +1,4 @@
-package learningHeadFirstJava;
+package learningHeadFirstJava.musicApp;
 
 import javax.sound.midi.*;
 
@@ -17,7 +17,7 @@ public class MiniMiniMusicApp {
             Track track = seq.createTrack();
 
             ShortMessage changeInstrumentMessage = new ShortMessage();
-            changeInstrumentMessage.setMessage(192, 1, 40, 0);
+            changeInstrumentMessage.setMessage(192, 1, 32, 0);
             MidiEvent changeInstrumentEvent = new MidiEvent(changeInstrumentMessage, 1);
             track.add(changeInstrumentEvent);
 
