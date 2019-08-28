@@ -1,14 +1,15 @@
 ////////////////////////
-// TITLE: MiniMusicApp
+// TITLE: MiniMusicPlayer1
 // AUTHOR: lego
 // DATE: 2019-08-22
 // PURPOSE: This is to have a little music app that play like a random sequence of notes.
+// The important new thing that we are doing is to add this function tha tmakes our events for us.
 ////////////////////////
-package learningHeadFirstJava.musicApp;
+package learningHeadFirstJava.learningGUI;
 
 import javax.sound.midi.*;
 
-public class MiniMusicApp {
+public class MiniMusicPlayer1 {
 
     public static void main(String[] args) {
         try {
@@ -41,7 +42,7 @@ public class MiniMusicApp {
 
 
         } catch (Exception exception) {
-            System.out.println("Failed to make exception: " + exception);
+            System.out.println("Failed to make event: " + exception);
         }
         return event;
     }

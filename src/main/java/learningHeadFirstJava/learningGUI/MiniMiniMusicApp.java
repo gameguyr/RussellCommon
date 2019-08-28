@@ -1,4 +1,4 @@
-package learningHeadFirstJava.musicApp;
+package learningHeadFirstJava.learningGUI;
 
 import javax.sound.midi.*;
 
