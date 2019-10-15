@@ -1,4 +1,4 @@
-package LearningFileReaders;
+package LearningFileReaders.firstRound;
 
 import com.sun.deploy.util.StringUtils;
 

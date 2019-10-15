@@ -1,4 +1,4 @@
-package LearningFileReaders;
+package LearningFileReaders.firstRound;
 
 /**
  * Created by lego on 6/23/17.

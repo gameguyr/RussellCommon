@@ -1,4 +1,4 @@
-package LearningFileReaders;
+package LearningFileReaders.firstRound;
 
 import java.io.IOException;
 import java.io.PrintWriter;
