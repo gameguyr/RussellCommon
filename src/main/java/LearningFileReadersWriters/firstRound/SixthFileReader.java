@@ -1,6 +1,4 @@
-package LearningFileReaders.firstRound;
-
-import com.sun.deploy.util.StringUtils;
+package LearningFileReadersWriters.firstRound;
 
 import java.io.*;
 import java.util.ArrayList;

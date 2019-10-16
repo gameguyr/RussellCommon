@@ -4,7 +4,7 @@
 // DATE: 2019-10-14
 // PURPOSE: 
 ////////////////////////
-package LearningFileReaders.secondRound;
+package LearningFileReadersWriters.secondRound;
 
 import java.io.FileWriter;
 import java.io.IOException;

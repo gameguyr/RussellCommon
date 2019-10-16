@@ -1,7 +1,6 @@
-package LearningFileReaders.firstRound; /**
+package LearningFileReadersWriters.firstRound; /**
  * Created by russell.lego on 7/23/16.
  */
-import com.sun.xml.internal.fastinfoset.util.StringArray;
 
 import java.io.*;
 import java.util.Scanner;

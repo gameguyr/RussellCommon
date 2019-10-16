@@ -1,4 +1,4 @@
-package LearningFileReaders.firstRound; /**
+package LearningFileReadersWriters.firstRound; /**
  * Created by lego on 6/22/17.
  */
 import java.io.*;
