@@ -15,7 +15,8 @@ public class DailyAdviceServer {
             "Go for the tight jeans. They do NOT make you look fat",
             "One word: inappropriate",
             "Just for today, be honest. Tell you boss what you *really* think",
-            "You might wan to rethink that haircut"};
+            "You might want to rethink that haircut",
+            "Always follow your dreams"};
     public void go() {
         try {
             ServerSocket serverSocket = new ServerSocket(4242);
