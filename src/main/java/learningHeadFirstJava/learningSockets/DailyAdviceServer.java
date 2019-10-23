@@ -11,7 +11,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class DailyAdviceServer {
-    String[] adviceList = {"Take smaller bites",
+    private String[] adviceList = {"Take smaller bites",
             "Go for the tight jeans. They do NOT make you look fat",
             "One word: inappropriate",
             "Just for today, be honest. Tell you boss what you *really* think",
