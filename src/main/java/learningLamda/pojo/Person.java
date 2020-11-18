@@ -1,9 +1,5 @@
-package com.example.bonusexercise1.pojo;
+package learningLamda.pojo;
 
-/**
- *
- * @author dheff
- */
 public class Person {
 
     private String firstName;

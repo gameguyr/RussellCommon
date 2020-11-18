@@ -1,6 +1,6 @@
-package com.example.bonusexercise1;
+package learningLamda;
 
-import com.example.bonusexercise1.pojo.Person;
+import learningLamda.pojo.Person;
 
 public interface NameExtractor<T extends Person> {
     String getName(T type);

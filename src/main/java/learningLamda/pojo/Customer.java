@@ -1,4 +1,4 @@
-package com.example.bonusexercise1.pojo;
+package learningLamda.pojo;
 
 public class Customer extends Person {
 

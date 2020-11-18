@@ -1,16 +1,16 @@
 package learningLamda;
 
-import com.example.bonusexercise1.pojo.Customer;
-import com.example.bonusexercise1.pojo.Employee;
-import com.example.bonusexercise1.pojo.Person;
-public class RussLamda {
+import learningLamda.pojo.Customer;
+import learningLamda.pojo.Employee;
+import learningLamda.pojo.Person;
+public class RussLambda {
 
     private Person person;
     private Customer customer;
     private Employee employee;
 
     public static void main(String[] args) {
-        Main main = new Main();
+        RussLambda main = new RussLambda();
         main.initializePeople();
         main.doStuff();
     }
@@ -28,21 +28,31 @@ public class RussLamda {
         NameExtractor<Person> personNameExtractor  = (Person person) -> {
             return person.getLastName();
         };
-        Person person = new Person();
-        person.setLastName("Lego");
 
-        System.out.println(personNameExtractor.getName(person));
+//        System.out.println(personNameExtractor.getName(person));
 
 
 
         //Step 2: write an implementation of NameExtractor for instances of Customer as a lambda expression
-        //have the body of the lambda return the result of Person.getFirstName()
+        //have the body of the lambda return the result of Person.getFirstName() and Person.getLastName()
+
+        NameExtractor<Customer> customerNameExtractor = (Customer customer) -> {
+            return customer.getFirstName() + " " + customer.getLastName();
+        };
 
         //Step 3: write an implementation of NameExtractor for instances of Employee as a lambda expression
         //have the body of the lambda return the result of Person.getFirstName()
 
+        NameExtractor<Employee> employeeNameExtractor = (Employee employee) -> {
+            return employee.getFirstName();
+        };
+
         //Step 4: display the output of the three Functional interfaces you created,
         //passing the prepopulated "person", "customer" and "employee" instance variables
+
+        System.out.println(personNameExtractor.getName(person));
+        System.out.println(customerNameExtractor.getName(customer));
+        System.out.println(employeeNameExtractor.getName(employee));
     }
 
     private void initializePeople() {

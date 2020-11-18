@@ -1,4 +1,4 @@
-package exercise4;
+package learningStrems2;
 
 public class Customer {
 

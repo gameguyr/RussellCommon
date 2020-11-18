@@ -68,8 +68,10 @@ public class ReadMailExample {
 
         String host = "imap.gmail.com";
         String mailStoreType = "imap";
-        String username = "adobe.sign.test.lego@gmail.com";
-        String password = "jszvpmytlmvvdrqu";
+//        String username = "adobe.sign.test.lego@gmail.com";
+//        String password = "jszvpmytlmvvdrqu";
+        String username = "echosign.automation@gmail.com";
+        String password = "Echo12345&&";
 
         check(host, mailStoreType, username, password);
 

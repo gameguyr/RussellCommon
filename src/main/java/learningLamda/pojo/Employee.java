@@ -1,9 +1,5 @@
-package com.example.bonusexercise1.pojo;
+package learningLamda.pojo;
 
-/**
- *
- * @author dheff
- */
 public class Employee extends Person {
 
     private Long employeeNum;
