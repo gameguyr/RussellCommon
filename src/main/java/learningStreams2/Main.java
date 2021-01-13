@@ -1,4 +1,4 @@
-package learningStrems2;
+package learningStreams2;
 
 import java.util.ArrayList;
 import java.util.List;
