@@ -11,7 +11,7 @@ public class RussellCommon {
         return minutesAndSeconds;
     }
 
-    public int minutesAndSecondsToSeconds(int numMinutes, int numSeconds) {
+    public static int minutesAndSecondsToSeconds(int numMinutes, int numSeconds) {
         return (numMinutes * 60) + numSeconds;
     }
 
@@ -22,7 +22,7 @@ public class RussellCommon {
      * @return the total number of seconds
      * @throws Exception just an exception when the two arrays are not the same size
      */
-    public int minutesAndSecondsToSeconds(int[] numMinutes, int[] numSeconds) throws Exception {
+    public static int minutesAndSecondsToSeconds(int[] numMinutes, int[] numSeconds) throws Exception {
         if (numMinutes.length != numSeconds.length) {
             throw new Exception("Arrays are not the same size");
         }
@@ -34,7 +34,14 @@ public class RussellCommon {
     }
 
     public static void main(String[] args) {
+        int[] numberOfMinutes = {1, 1, 1, 1};
+        int[] numberOfSeconds = {23,28,18,34};
+        try {
+            int totalNumberOfSeconds = RussellCommon.minutesAndSecondsToSeconds(numberOfMinutes, numberOfSeconds);
+            System.out.println(RussellCommon.secondsToMinutesAndSeconds(totalNumberOfSeconds));
+        } catch (Exception exception) {
+            System.out.println(exception);
+        }
 
-        System.out.println(RussellCommon.secondsToMinutesAndSeconds(636));
     }
 }

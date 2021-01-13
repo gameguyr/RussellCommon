@@ -1,4 +1,4 @@
-package learningStrems2;
+package learningStreams2;
 
 public class Customer {
 
