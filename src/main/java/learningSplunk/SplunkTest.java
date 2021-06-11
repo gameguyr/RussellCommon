@@ -7,8 +7,8 @@ public class SplunkTest {
 
         // Create a map of arguments and add login parameters
         ServiceArgs loginArgs = new ServiceArgs();
-        loginArgs.setUsername("lego");
-        loginArgs.setPassword("BeTheCh@ngeYouWant2See");
+        loginArgs.setUsername("");
+        loginArgs.setPassword("");
         loginArgs.setHost("splunk-us.corp.adobe.com");
         loginArgs.setPort(8089);
 
